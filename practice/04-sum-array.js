@@ -5,7 +5,12 @@
 // - Empty array: return 0.
 
 function sumArray(numbers) {
-  // your code
+  if (!numbers.length) return 0;
+  let sum = 0;
+  for (number of numbers){
+    sum += number;
+  }
+  return sum;
 }
 
 // Expected output:

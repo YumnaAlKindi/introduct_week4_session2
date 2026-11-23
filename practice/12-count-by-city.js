@@ -5,7 +5,12 @@
 // - If the city is not in the object yet, set it to 1. Otherwise add 1.
 
 function countByCity(users) {
-  // your code
+  let cities = {}
+  for (user of users){
+    if(cities[user.city]) {cities[user.city]++}
+    else {cities[user.city] = 1}
+  }
+  return cities
 }
 
 const users = [

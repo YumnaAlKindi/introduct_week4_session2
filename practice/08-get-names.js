@@ -6,7 +6,11 @@
 // - Empty array: return [].
 
 function getNames(users) {
-  // your code
+  names = [];
+  for (user of users){
+    names.push(user.name);
+  }
+  return names;
 }
 
 const users = [

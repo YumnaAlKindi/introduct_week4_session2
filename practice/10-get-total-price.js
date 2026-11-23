@@ -5,7 +5,11 @@
 // - Total = the sum of price * qty of every product.
 
 function getTotalPrice(products) {
-  // your code
+  let sum = 0;
+  for (product of products){
+    sum += product.price * product.qty;
+  }
+  return sum;
 }
 
 // Expected output:

@@ -5,7 +5,12 @@
 // - Empty array: return null.
 
 function getMax(numbers) {
-  // your code
+  if (!numbers.length) return null;
+  let max = numbers[0];
+  for (number of numbers){
+    if (number > max ) max = number;
+  }
+  return max;
 }
 
 // Expected output:

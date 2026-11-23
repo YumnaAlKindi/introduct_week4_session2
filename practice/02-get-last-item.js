@@ -5,7 +5,8 @@
 // - Empty array: return null.
 
 function getLastItem(items) {
-  // your code
+  let last = items[(items.length )- 1] || null;
+  return last ;
 }
 
 // Expected output:

@@ -6,7 +6,13 @@
 // - If start is already limit or more, the answer is 0.
 
 function countDoublings(start, limit) {
-  // your code
+  let counter = 0;
+
+  while (start < limit){
+    counter ++;
+    start*=2;
+  }
+  return counter;
 }
 
 // Expected output:

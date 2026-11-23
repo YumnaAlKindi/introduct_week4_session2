@@ -5,7 +5,8 @@
 // - Return text like "Muscat: 31°C". Use a template literal.
 
 function describeCity(city) {
-  // your code
+  let text = city.name + " :" + city.temperature + "°C";
+  return text;
 }
 
 // Expected output:

@@ -5,7 +5,11 @@
 // - isAdult is true when age is 18 or more.
 
 function makeUser(name, age) {
-  // your code
+  let user = {};
+  user.name = name;
+  user.age = age;
+  user.isAdult = age >=18 ? true: false; 
+  return user;
 }
 
 // Expected output:
