@@ -6,7 +6,13 @@
 // - Stop the loop as soon as you find it.
 
 function getPriceOf(products, name) {
-  // your code
+
+  for (product of products){
+    if (product.name === name){
+      return product.price;
+    }
+  }
+  return null;
 }
 
 const products = [

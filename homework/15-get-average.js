@@ -5,7 +5,13 @@
 // - Empty array: return 0.
 
 function getAverage(numbers) {
-  // your code
+
+  if (! numbers.length) return 0;
+  let sum = 0;
+  for (number of numbers){
+    sum += number;
+  }
+  return sum / numbers.length;
 }
 
 // Expected output:
